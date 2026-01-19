@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatorio CCOMUSOC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Observatorio CCOMUSOC</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="data-url">Ingresá la URL de datos:</label>
+      <input type="text" id="data-url" placeholder="https://datos.gob.ar/…">
+      <button id="fetch-data">Actualizar gráficos</button>
+    </section>
+
+    <section class="charts-section">
+      <div class="chart-container">
+        <canvas id="barChart"></canvas>
+        <p class="source" id="barSource"></p>
+      </div>
+      <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+        <p class="source" id="pieSource"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
